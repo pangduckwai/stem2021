@@ -52,4 +52,4 @@ window.onload = () => init();
 
 ---
 
-[← 上一課](README.md) | [下一課 →](lesson-01.md)
+[← 上一課](README.md) | 下一課 →
