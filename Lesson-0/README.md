@@ -44,6 +44,7 @@ window.onload = (_) => {
 
 - 於瀏覽器在點選狀態下按鍵盤上的 F12，打開「開發者工具」，
 - 打開 Console 分頁下可以見到當前 JavaScript 程式的執行結果。
+
 ![Dev Tools - Console](dev-tools0.png)
 
 #### >>> 嘗試刷新一下瀏覽器，有什麼改變？
