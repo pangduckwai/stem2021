@@ -48,14 +48,16 @@ window.onload = (_) => {
 
 - 於瀏覽器在點選狀態下按鍵盤上的 F12，打開「開發者工具」，
 - 打開 Console 分頁下可以見到當前 JavaScript 程式的執行結果。
-
-![Dev Tools - Console](dev-tools0.png)
+![Dev Tools - Console](lesson-00.png)
 
 #### >>> 嘗試刷新一下瀏覽器，有什麼改變？
-> _你的答案..._
+> _答案..._
+> 程式再跑了一次，輸出中的時間不同了：
+> ![Answer - lesson-00-1](lesson-01.png)
 
 #### >>> 用哪一個 JavaScript 指令可以把文字輸出到 Console 中？
-> _你的答案..._
+> _答案..._
+> `console.log()`
 
 #### 注意 `lesson-0.html` 檔最後一句中 `<script>`
 ```html
