@@ -43,10 +43,32 @@ window.onload = () => init();
 - **緊記修改 `lesson-0.html` 中 `<script>` 的 `src` 連結！！！**
 
 #### >>> 執行是什麼？是「結果 1」還是「結果 2」會被執行？如果第一句改為 `let x = 45;` 會有什麼不同效果？
-> _你的答案..._
+> _答案..._
+> 執行結果是「結果 1」（`64 is more than 50`），因為 variable `x` 等於 64，大過 50。
+> 如果 variable `x` 改為等於 45，執行結果會變為「結果 2」（`45 is less than 50`）。
 
 #### >>> 如果第一句改為 `let x = 50;` 會有什麼結果？這個結果對嗎？要怎樣改才行？
-> _你的答案..._
+> _答案..._
+> - 執行結果是「結果 2」（`50 is less than 50`）。原因是 `else` 的意思就是跟原本的狀況（`x > 50`）相反。
+> - 而「`x` 大過 50」的相反是「`x` 細過或等於 50」，所以當 `x` 等於 50 的時候也會跑「結果 2」而得出 `50 is less than 50` 這不合理的結果。
+> - 可以把程式如下改：
+> - `lesson-02.js`
+> ```javascript
+> 	function init() {
+> 		// 更正版本
+> 		let x = 50;
+> 
+> 		if (x > 50) {
+> 			console.log(x, 'is more than 50'); // 結果 1
+> 		} else if (x === 50) {
+> 			console.log(x, 'is equal to 50'); // 結果 3
+> 		} else {
+> 			console.log(x, 'is less than 50'); // 結果 2
+> 		}
+> 	}
+> 
+> 	window.onload = () => init();
+> ```
 
 ---
 
