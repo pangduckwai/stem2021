@@ -38,17 +38,17 @@ Hello 4
 - `lesson-03.js`
 ```javascript
 function init() {
-  let total = 0;
-  let count = 0;
+	let total = 0;
+	let count = 0;
 
-  // 計算 1 + 2 + 3 + 4 + 5 的結果
-  while (count < 5) {
-    total = total + count;
-    count = count + 1;
-    console.log(count, total);
-  }
+	// 計算 1 + 2 + 3 + 4 + 5 的結果
+	while (count < 5) {
+		total = total + count;
+		count = count + 1;
+		console.log(count, total);
+	}
 
-  console.log('total is', total, 'count', count);
+	console.log('total is', total, 'count', count);
 }
 
 window.onload = () => init();
@@ -63,15 +63,15 @@ window.onload = () => init();
 ```javascript
 function init() {
 	// 第2版本
-  let total = 0;
+	let total = 0;
 
-  // 計算 1 + 2 + 3 + 4 + 5 的結果
-  for (let count = 0; count < 5; count = count + 1) {
-    total = total + count;
-    console.log(count, total);
-  }
+	// 計算 1 + 2 + 3 + 4 + 5 的結果
+	for (let count = 0; count < 5; count = count + 1) {
+		total = total + count;
+		console.log(count, total);
+	}
 
-  console.log('total is', total, 'count', count);
+	console.log('total is', total, 'count', count);
 }
 
 window.onload = () => init();

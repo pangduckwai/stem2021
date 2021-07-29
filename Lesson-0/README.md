@@ -7,6 +7,10 @@
 
 ## 預備功夫
 
+### 安裝一個文字編輯器 (Text Editor)
+- Windows 中的 notepad 是一個極簡單的 Text Editor
+- 建議用 Microsoft 的 [Visual Studio Code](https://code.visualstudio.com/)，免費但有足夠功能。
+
 ### 在電腦中開一個新的目錄，例如：
 - `Desktop\Learn_Javascript\`
 
@@ -29,10 +33,10 @@
 </html>
 ```
 
-1. `lesson-00.js`
+2. `lesson-00.js`
 ```javascript
 function init() {
-  console.log(`Hello World!!! at ${new Date()}`);
+	console.log(`Hello World!!! at ${new Date()}`);
 }
 
 window.onload = (_) => {
