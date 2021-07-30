@@ -26,7 +26,7 @@
 	</head>
 
 	<body>
-		<h1>JavaScript Lesson!!!</h1>
+		<h1>JavaScript Lesson 0!!!</h1>
 	</body>
 
 	<script src="lesson-00.js" type="text/javascript"></script>
