@@ -45,7 +45,9 @@ window.onload = () => init();
 
 #### >>> 如何才可以把上面兩個變數a與b的數值對調呢？
 > _答案..._
+> - `lesson-01.js`
 > ```javascript
+>	// 答案版本
 > function init() {
 > 	let a = 8;
 > 	let b = 16;

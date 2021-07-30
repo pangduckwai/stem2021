@@ -27,7 +27,31 @@ window.onload = () => init();
 - **緊記修改 `lesson-0.html` 中 `<script>` 的 `src` 連結！！！**
 
 #### >>> 試完成 `lesson-04.js`：
-> _你的答案..._
+> _答案..._
+> - 首先計算 `fn` 等於 `fn1 + fn2`。
+> - 然後預備計算下一個數。注意下一個數 F<sub>n+1</sub> = F<sub>n-1</sub> + F<sub>n</sub>：
+> - 所以先把 `fn1` 的值抄進 `fn2`，然後把 `fn` 的值抄進 `fn1`：
+> - `lesson-04.js`
+> ```javascript
+> // 答案版本
+> function init() {
+> 	let count = 2;
+> 	let fn2 = 0; // 第 n-2 項
+> 	let fn1 = 1; // 第 n-1 項
+> 	let fn; // 第 n 項
+> 
+> 	while (count < 50) {
+> 		fn = fn1 + fn2;
+> 		fn2 = fn1;
+> 		fn1 = fn;
+> 
+> 		console.log(count, fn);
+> 		count ++; // 跟 count = count + 1 是完全相同
+> 	}
+> }
+> 
+> window.onload = () => init();
+> ```
 
 ---
 

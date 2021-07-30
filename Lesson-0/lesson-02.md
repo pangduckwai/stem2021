@@ -54,20 +54,20 @@ window.onload = () => init();
 > - 可以把程式如下改：
 > - `lesson-02.js`
 > ```javascript
-> 	function init() {
-> 		// 更正版本
-> 		let x = 50;
+>	// 更正版本
+> function init() {
+> 	let x = 50;
 > 
-> 		if (x > 50) {
-> 			console.log(x, 'is more than 50'); // 結果 1
-> 		} else if (x === 50) {
-> 			console.log(x, 'is equal to 50'); // 結果 3
-> 		} else {
-> 			console.log(x, 'is less than 50'); // 結果 2
-> 		}
+> 	if (x > 50) {
+> 		console.log(x, 'is more than 50'); // 結果 1
+> 	} else if (x === 50) {
+> 		console.log(x, 'is equal to 50'); // 結果 3
+> 	} else {
+> 		console.log(x, 'is less than 50'); // 結果 2
 > 	}
+> }
 > 
-> 	window.onload = () => init();
+> window.onload = () => init();
 > ```
 
 ---

@@ -65,8 +65,8 @@ window.onload = () => init();
 > - 可以把程式如下改：
 > - `lesson-03.js`
 > ```javascript
+>	// 更正版本
 > function init() {
-> 	// 更正版本
 > 	let total = 0;
 > 	let count = 1;
 > 
@@ -86,8 +86,8 @@ window.onload = () => init();
 ### 如果將 `lesson-03.js` 變成下面的樣子，會發生什麼事？試試看。
 - `lesson-03.js`
 ```javascript
+// 第2版本
 function init() {
-	// 第2版本
 	let total = 0;
 
 	// 計算 1 + 2 + 3 + 4 + 5 的結果
