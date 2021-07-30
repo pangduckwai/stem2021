@@ -65,7 +65,7 @@ window.onload = () => init();
 > - 可以把程式如下改：
 > - `lesson-03.js`
 > ```javascript
->	// 更正版本
+> // 更正版本
 > function init() {
 > 	let total = 0;
 > 	let count = 1;

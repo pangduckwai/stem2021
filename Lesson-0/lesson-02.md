@@ -54,7 +54,7 @@ window.onload = () => init();
 > - 可以把程式如下改：
 > - `lesson-02.js`
 > ```javascript
->	// 更正版本
+> // 更正版本
 > function init() {
 > 	let x = 50;
 > 

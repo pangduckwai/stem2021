@@ -47,7 +47,7 @@ window.onload = () => init();
 > _答案..._
 > - `lesson-01.js`
 > ```javascript
->	// 答案版本
+> // 答案版本
 > function init() {
 > 	let a = 8;
 > 	let b = 16;
