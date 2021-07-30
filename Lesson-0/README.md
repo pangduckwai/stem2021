@@ -21,7 +21,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>
-			JavaScript Lesson!!!
+			JavaScript Lesson 0!!!
 		</title>
 	</head>
 
