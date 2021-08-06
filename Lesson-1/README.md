@@ -1,18 +1,19 @@
 # Lesson 1 | Chapter 0
 
-## JavaScript 是什麼？
-- JavaScript 是一種腳本，也能稱它為程式語言。
-- 大部份瀏覽器都支援執行 JavaScript，而絕大部份電腦都已預裝瀏覽器，因此只需要一部電腦就可以開始學習 JavaScript 編程。
-- JavaScript 可以在網頁中實現出複雜的功能，初學者也能容易的編寫出很不錯的效果。
-
-## 預備功夫
-
-### 安裝一個文字編輯器 (Text Editor)
-- 如果還未做的話，請安裝一個 Text Editor
-- 建議用 Microsoft 的 [Visual Studio Code](https://code.visualstudio.com/)，免費但有足夠功能。
+## 上期回顧
+> ## JavaScript 是什麼？
+> - JavaScript 是一種腳本，也能稱它為程式語言。
+> - 大部份瀏覽器都支援執行 JavaScript，而絕大部份電腦都已預裝瀏覽器，因此只需要一部電腦就可以開始學習 JavaScript 編程。
+> - JavaScript 可以在網頁中實現出複雜的功能，初學者也能容易的編寫出很不錯的效果。
+> 
+> ## 預備功夫
+> 
+> ### 安裝一個文字編輯器 (Text Editor)
+> - 如果還未做的話，請安裝一個 Text Editor
+> - 建議用 Microsoft 的 [Visual Studio Code](https://code.visualstudio.com/)，免費但有足夠功能。
 
 ### 在電腦中開一個新的目錄，例如：
-- `Desktop\Learn_Javascript\`
+- `Desktop\Lesson_01\`
 
 ### 在這目錄中新增以下兩個檔案：
 1. `lesson-1.html`

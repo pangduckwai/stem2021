@@ -12,7 +12,7 @@
 - 建議用 Microsoft 的 [Visual Studio Code](https://code.visualstudio.com/)，免費但有足夠功能。
 
 ### 在電腦中開一個新的目錄，例如：
-- `Desktop\Learn_Javascript\`
+- `Desktop\Lesson_00\`
 
 ### 在這目錄中新增以下兩個檔案：
 1. `lesson-0.html`
