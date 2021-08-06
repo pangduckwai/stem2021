@@ -49,17 +49,18 @@ window.onload = () => init();
 - 於瀏覽器在點選狀態下按鍵盤上的 F12，打開「開發者工具」，
 - 打開 Console 分頁下可以見到當前 JavaScript 程式的執行結果。
 
-### 注意 `lesson-1.html` 檔最後一句中 `<script>`
-```html
-	<script src="lesson-10.js" type="text/javascript"></script>
-```
-
-這裡的 `src` 連結了剛才的另一個檔 `lesson-10.js` 的。在後面的練習中，改變這連結就可以執行其他程式。
-> 例如：寫好了 `lesson-11.js` ，把 `lesson-1.html` 最後一句改為
+## 上期回顧
+> ### 注意 `lesson-1.html` 檔最後一句中 `<script>`
 > ```html
-> 	<script src="lesson-11.js" type="text/javascript"></script>
+> 	<script src="lesson-10.js" type="text/javascript"></script>
 > ```
-> 再刷新一下瀏覽器就可執行 `lesson-11.js`
+> 
+> 這裡的 `src` 連結了剛才的另一個檔 `lesson-10.js` 的。在後面的練習中，改變這連結就可以執行其他程式。
+> > 例如：寫好了 `lesson-11.js` ，把 `lesson-1.html` 最後一句改為
+> > ```html
+> > 	<script src="lesson-11.js" type="text/javascript"></script>
+> > ```
+> > 再刷新一下瀏覽器就可執行 `lesson-11.js`
 
 #### >>> `lesson-10.js` 的執行結果是什麼？
 > _你的答案..._
