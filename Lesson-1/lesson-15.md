@@ -27,7 +27,7 @@
 			<br/><br/>
 			Hello, what is your name?
 			<br/>
-			My name is <input id="name" type="text" value="..."/>
+			My name is <input id="name" type="text" />
 			<button id="go">GO -></button>
 		</p>
 		<hr/>
