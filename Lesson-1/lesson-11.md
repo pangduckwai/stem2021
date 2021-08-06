@@ -53,3 +53,7 @@ window.onload = () => init();
 #### >>> 嘗試把上堂學過首10個的 Fibonacci 數列，用 array 存起來，到最後才印出來。
 - **提示** `for` loop 只需要一句代碼
 > _你的答案..._
+
+---
+
+[← 上一課](README.md) | [下一課 →](lesson-12.md)
