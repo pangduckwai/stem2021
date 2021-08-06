@@ -46,3 +46,7 @@
 >  - 留意 `lesson-00.js` 最後一句 `window.onload = () => init();` 意思是說在 window（指的是瀏覽器視窗）在載入的時候，就是剛打開（或剛刷新）一個網頁或 html 文件的時候，去跑一個叫做 `init()` 的東西。而這個 `init()` 就定義了在 `lesson-00.js` 的最開頭。
 >  - 這叫做 event handler，意思是當有事件（event）發生時，告訴系統如何處理。
 >  - 這裡就是說：「在載入或刷新事件發生時，請跑 `init()` 這個函數（function）」
+
+---
+
+[← 上一課](lesson-12.md) | [下一課 →](lesson-14.md)
