@@ -35,7 +35,7 @@ window.onload = () => init();
 ```
 - **緊記修改 `lesson-1.html` 中 `<script>` 的 `src` 連結！！！**
 
-#### >>> 如何存取一個 JSON Object 中的數據項？
+#### >>> 上面示範了多少方法去存取一個 JSON Object 中的數據項？
 > _你的答案..._
 
 ### JSON Object 中的數據項可以是 array，也可以是另一個 object：

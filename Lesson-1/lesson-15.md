@@ -1,4 +1,4 @@
-# Lesson 1 | Chapter 3
+# Lesson 1 | Chapter 5
 
 ## Dynamic / Interactive HTML with JavaScript 建立動態/互動的網頁
 - 加上 JavaScript 能使網頁變成動態，更可以建立互動的網頁。
@@ -45,13 +45,13 @@
 - `lesson-15.js`
 ```javascript
 function press() {
-  let name = document.getElementById('name').value;
-  console.log(`Hello, ${name}`);
+	let name = document.getElementById('name').value;
+	console.log(`Hello, ${name}`);
 }
 
 function init() {
 	document.getElementById('telltime').textContent = `${new Date()}`;
-  document.getElementById('go').onclick = press;
+	document.getElementById('go').onclick = press;
 }
 
 window.onload = () => init();

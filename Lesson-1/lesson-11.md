@@ -2,9 +2,9 @@
 
 ## Array 陣列
 - Array 是一種常用的數據結構。
-- 一個array 是一個 variable，但可儲存多項數據。
+- 一個 array 是一個 variable，但可儲存多項數據。
 
-### 每個 array 都有一個 index （指數），用來分辨它中間的每個數據，例如：
+### 每個 array 都有一個 index （指數），用來分辨它包含的每個數據，例如：
 ```javascript
 	let n = [1, 2, 3, 4, 5]; // 首5個自然數
 ```
