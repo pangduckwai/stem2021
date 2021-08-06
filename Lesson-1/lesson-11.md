@@ -1,4 +1,4 @@
-# Lesson 1 | Chapter １
+# Lesson 1 | Chapter 1
 
 ## Array 陣列
 - Array 是一種常用的數據結構。
@@ -12,8 +12,7 @@
 ### Array 有什麼用途呢？舉例如果你要儲存並印出最開頭的7個質數，可以怎樣做？
 - 可以用一個 array 儲存它們：
 
-### 新增以下檔案：
-- `lesson-11.js`
+### 把 `lesson-10.js` 改為下面樣子：
 ```javascript
 function init() {
 	let primes = [2, 3, 5, 7, 11, 13, 17]; // 首7個質數
@@ -26,7 +25,6 @@ function init() {
 window.onload = () => init();
 ```
 - **緊記修改 `lesson-1.html` 中 `<script>` 的 `src` 連結！！！**
-
 - **注意在上面的例子，是如何「訪問」 array 中的每一個項目。**
 
 #### >>>根據上面的程式，我們如何找出一個 array 有多少項？
@@ -36,12 +34,22 @@ window.onload = () => init();
 > _你的答案..._
 
 ### 新增以下檔案：
-- `lesson-12.js`
+- `lesson-11.js`
 ```javascript
 function init() {
+	const fib = [0, 1];
 
+	for (let idx = 2; idx < 10; idx ++) {
+		// 提示：這裡只需要一句代碼
+	}
+
+	console.log(fib);
 }
 
 window.onload = () => init();
 ```
 - **緊記修改 `lesson-1.html` 中 `<script>` 的 `src` 連結！！！**
+
+#### >>> 嘗試把上堂學過首10個的 Fibonacci 數列，用 array 存起來，到最後才印出來。
+- **提示** `for` loop 只需要一句代碼
+> _你的答案..._
