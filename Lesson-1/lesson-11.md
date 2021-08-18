@@ -28,10 +28,27 @@ window.onload = () => init();
 - **注意在上面的例子，是如何「訪問」 array 中的每一個項目。**
 
 #### >>> 根據上面的程式，我們如何找出一個 array 有多少項？
-> _你的答案..._
+> _答案..._
+> 假設 `xxx` 是 array 的 variable 名字，用 `xxx.length` 可得出它共有多少項。
 
 #### >>> 上面程式的輸出有什麼問題？可以如何改進？
-> _你的答案..._
+> _答案..._
+> 輸出第一句「第 0 個質數是 2」有點奇怪，可如下改：
+> - `lesson-10.js`
+> ```javascript
+> // 更正版本
+> function init() {
+> 	let primes = [2, 3, 5, 7, 11, 13, 17]; // 首7個質數
+> 
+> 	let idx = 0;
+> 	while (idx < primes.length) {
+> 		console.log('第', idx + 1, '個質數是', primes[idx]);
+> 		idx = idx + 1;
+> 	}
+> }
+> 
+> window.onload = () => init();
+> ```
 
 ### 新增以下檔案：
 - `lesson-11.js`
@@ -52,7 +69,22 @@ window.onload = () => init();
 
 #### >>> 嘗試把上堂學過首10個的 Fibonacci 數列，用 array 存起來，到最後才印出來。
 - **提示** `for` loop 中只需要一句代碼
-> _你的答案..._
+> _答案..._
+> - `lesson-11.js`
+> ```javascript
+> // 答案版本
+> function init() {
+> 	const fib = [0, 1];
+> 
+> 	for (let idx = 2; idx < 10; idx ++) {
+> 		fib[idx] = fib[idx - 1] + fib[idx - 2];
+> 	}
+> 
+> 	console.log(fib);
+> }
+> 
+> window.onload = () => init();
+> ```
 
 ---
 

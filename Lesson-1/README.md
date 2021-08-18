@@ -63,7 +63,8 @@ window.onload = () => init();
 > > 再刷新一下瀏覽器就可執行 `lesson-11.js`
 
 #### >>> `lesson-10.js` 的執行結果是什麼？
-> _你的答案..._
+> _答案..._
+> ![Answer - lesson-10](lesson-10.png)
 
 ---
 

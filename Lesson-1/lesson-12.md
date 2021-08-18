@@ -36,7 +36,10 @@ window.onload = () => init();
 - **緊記修改 `lesson-1.html` 中 `<script>` 的 `src` 連結！！！**
 
 #### >>> 上面示範了多少方法去存取一個 JSON Object 中的數據項？
-> _你的答案..._
+> _答案..._
+> 兩種：
+> 1. 用一點（`.` dot）（稱為 dot notation）然後加上 `key` 的名字，例如 `student.name`。
+> 1. 用方括號（`[` 及 `]`）以及單引號（`'` single quote）包著 `key` 的名字，例如 `student['name']`。
 
 ### JSON Object 中的數據項可以是 array，也可以是另一個 object：
 ```javascript
@@ -74,7 +77,30 @@ window.onload = () => init();
 - **緊記修改 `lesson-1.html` 中 `<script>` 的 `src` 連結！！！**
 
 #### >>> 如何把程式修改為只印出年齡為11歲或以上的學生？
-> _你的答案..._
+> _答案..._
+> 用上一堂講過的 `if`。
+> - `lesson-12b.js`
+> ```javascript
+> // 答案版本
+> function init() {
+> 	const students = [
+> 		{ name: 'Mary', gender: 'Female', age: 11, grade: 'P5' },
+> 		{ name: 'John', gender: 'Male', age: 12, grade: 'P6' },
+> 		{ name: 'Peter', gender: 'Male', age: 10, grade: 'P4' },
+> 		{ name: 'Sue', gender: 'Female', age: 9, grade: 'P3' },
+> 		{ name: 'Jade', gender: 'Female', age: 11, grade: 'P5' },
+> 	];
+> 
+> 	for (let idx = 0; idx < students.length; idx ++) {
+> 		let age = students[idx].age;
+> 		if (age >= 11) {
+> 			console.log(students[idx]);
+> 		}
+> 	}
+> }
+> 
+> window.onload = () => init();
+> ```
 
 ---
 

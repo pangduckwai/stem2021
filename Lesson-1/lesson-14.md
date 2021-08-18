@@ -50,7 +50,19 @@ window.onload = () => init();
 ```
 
 #### >>> 試把上面改為向你打招呼的網頁（改為顯示你的名字）。
-> _你的答案..._
+> _答案..._
+> - `lesson-14.js`
+> ```javascript
+> // 答案版本
+> function init() {
+> 	document.getElementById('greeting').textContent = '你的名字';
+> 	document.getElementById('telltime').textContent = `${new Date()}`;
+> }
+> 
+> window.onload = () => init();
+> ```
+> - 注意 JavaScript 的 `getElementById('greeting')` 對應 html 中的 `<span id="greeting"></span>`
+> - 同樣 JavaScript 的 `getElementById('telltime')` 對應 html 中的 `<i id="telltime"></i>`
 
 ---
 
