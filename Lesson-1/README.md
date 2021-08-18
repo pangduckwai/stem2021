@@ -64,6 +64,7 @@ window.onload = () => init();
 
 #### >>> `lesson-10.js` 的執行結果是什麼？
 > _答案..._
+> 
 > ![Answer - lesson-10](lesson-10.png)
 
 ---
