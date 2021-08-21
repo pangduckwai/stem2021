@@ -74,6 +74,7 @@ function init() {
 
 window.onload = () => init();
 ```
+- **緊記修改 `lesson-2.html` 中 `<script>` 的 `src` 連結！！！**
 
 #### >>> function `clicked()` 要加上一句什麼才算完成呢？
 > _你的答案..._

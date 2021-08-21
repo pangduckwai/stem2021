@@ -88,10 +88,10 @@ a:active, a:link, a:visited {
 	padding: 21px 28px 21px 28px;
 	margin-right: 4px;
 	display: inline-block;
-	vertical-align: top;
 	border: 1px solid;
 	justify-content: center;
 	align-items: center;
+	font-family: monospace;
 	font-size: 3em;
 	cursor: pointer;
 	color: #424242;
@@ -145,7 +145,7 @@ a:active, a:link, a:visited {
 				<span id="c2-2">8</span>
 			</div>
 		</div>
-		<p id="message">&nbsp;Hello!</p>
+		<p id="message">&nbsp;</p>
 	</div>
 	<div class="footer">
 		<p>© 2021 SEA9.ORG</p>
