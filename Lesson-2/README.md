@@ -107,6 +107,7 @@ a:active, a:link, a:visited {
 
 #message {
 	padding-top: 14px;
+	height: 2em;
 }
 ```
 

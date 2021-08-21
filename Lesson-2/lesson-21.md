@@ -13,26 +13,26 @@ let cells = [];
 // Event handler: 處理滑鼠點擊方格事件
 function clicked(row, col) {
 	if (player === 0) {
-    console.log('No game in progress');
-    return ;
-  }
+		console.log('No game in progress');
+		return ;
+	}
 
-  if (cells[row][col] !== 0) {
-    console.log(`[${row}, ${col}] already occupied`);
-    return;
-  }
+	if (cells[row][col] !== 0) {
+		console.log(`[${row}, ${col}] already occupied`);
+		return;
+	}
 
-  const cell = document.getElementById(`c${row}-${col}`);
-  if (player < 0) {
-    cell.textContent = 'X';
-    cells[row][col] = -1;
-  } else {
-    // 在這個位置，`player`的值是「小過零」，還是「小過等於零」呢？
-    cell.textContent = 'O';
-    cells[row][col] = 1;
-  }
+	const cell = document.getElementById(`c${row}-${col}`);
+	if (player < 0) {
+		cell.textContent = 'X';
+		cells[row][col] = -1;
+	} else {
+		// 在這個位置，`player`的值是「小過零」，還是「小過等於零」呢？
+		cell.textContent = 'O';
+		cells[row][col] = 1;
+	}
 
-  // 這裡還欠一句什麼程式才完成
+	// 這裡還欠一句什麼程式才完成
 }
 
 // Event handler: 處理滑鼠點擊'New game' button事件
@@ -49,7 +49,7 @@ function newgame() {
 	document.getElementById('c2-1').onclick = () => clicked(2, 1); // 設定 event handler
 	document.getElementById('c2-2').onclick = () => clicked(2, 2); // 設定 event handler
 
-  document.getElementById('c0-0').textContent = '_';
+	document.getElementById('c0-0').textContent = '_';
 	document.getElementById('c0-1').textContent = '_';
 	document.getElementById('c0-2').textContent = '_';
 	document.getElementById('c1-0').textContent = '_';
@@ -59,12 +59,12 @@ function newgame() {
 	document.getElementById('c2-1').textContent = '_';
 	document.getElementById('c2-2').textContent = '_';
 
-  player = -1; // 'X' start first
-  cells = [
-    [0, 0, 0],
-    [0, 0, 0],
-    [0, 0, 0],
-  ];
+	player = -1; // 'X' start first
+	cells = [
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0],
+	];
 }
 
 function init() {
