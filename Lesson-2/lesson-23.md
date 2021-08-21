@@ -1,4 +1,4 @@
-# Lesson 2 | Chapter 2
+# Lesson 2 | Chapter 3
 
 ## 測試
 
