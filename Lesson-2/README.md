@@ -41,20 +41,16 @@ body {
 	font-family: "Roboto",Arial,sans-serif;
 	font-weight: 300;
 	font-weight: normal;
-	font-size: 12pt;
+	font-size: 10pt;
 }
 a:active, a:link, a:visited {
 	text-decoration: none;
 	color: skyblue;
 }
 
-#header {
+.header {
 	position: relative;
 	margin: 21px 14px 0;
-}
-#header img {
-	float: left;
-	height: 82px;
 }
 #title {
 	float: left;
@@ -62,78 +58,37 @@ a:active, a:link, a:visited {
 	font-size: 2em;
 }
 
-#content {
+.content {
 	clear: both;
 	padding-top: 7px;
 	padding-left: 14px;
-	margin-bottom: 35px;
+	margin-bottom: 14px;
 }
-#content > div {
-	margin-top: 21px;
+.content > div {
+	margin-top: 7px;
 }
-#content h1 {
-	color: lightblue;
-	font-size: 1.7em;
-	font-variant: small-caps;
-	line-height: 1.3;
-	margin: 28px 0 14px 0;
-	margin: 0 0 14px 0;
-}
-#content h1 img {
-	height: 64px;
-	vertical-align: middle;
-	margin-right: 14px;
-}
-#content h3 {
-	color: lightgray;
-	font-size: 1.4em;
-	line-height: 1.3;
-	margin: 21px 0 0 7px;
-}
-#content h3 img {
-	height: 64px;
-	vertical-align: middle;
-}
-#content p, ol {
+.content p {
 	color: #404040;
 	font-size: 1.2em;
 	line-height: 1.3;
 	margin: 7px 0 7px 0;
 }
-#content li {
-	margin: 7px 0 7px 21px;
-}
-#content p img {
-	width: 100%;
-	margin-top: 7px;
-}
-#content span {
-	display: inline-block;
-	vertical-align: top;
-}
 
-#footer div {
-	float: left;
-	padding-left: 14px;
-	text-align: center;
-}
-#footer p {
+.footer p {
 	font-size: 0.7em;
 	padding-top: 3px;
 	margin-left: 14px;
 	margin-right: 14px;
 }
-#footer img {
-	margin-right: 14px;
-}
 
-.board {
-	display: grid;
-	gap: 10px;
-	grid-auto-rows: 100px;
+.board div {
+	margin-bottom: 7px;
 }
-.cell {
-	display: flex;
+.board span {
+	padding: 21px 28px 21px 28px;
+	margin-right: 4px;
+	display: inline-block;
+	vertical-align: top;
 	border: 1px solid;
 	justify-content: center;
 	align-items: center;
@@ -141,13 +96,17 @@ a:active, a:link, a:visited {
 	cursor: pointer;
 	color: #424242;
 }
-.cell:hover {
+.board span:hover {
 	background-color: #eeeeee;
 }
 
 .controls {
 	vertical-align: bottom;
 	margin: 4px;
+}
+
+#message {
+	padding-top: 14px;
 }
 ```
 
@@ -159,180 +118,66 @@ a:active, a:link, a:visited {
 <meta charset="utf-8"/>
 <meta name="Description" content="Lesson 2">
 <link type="text/css" rel="stylesheet" href="lesson-2.css" />
-<style id="boardcss" type="text/css">
-#board {grid-template-columns: repeat(3, 100px);}
-#left {width: 350px;}
-</style>
 </head>
 <body>
-	<div id="header">
+	<div class="header">
 		<div id="title">Lesson 2 - Tic Tac Toe</div>
 	</div>
-	<div id="content">
-		<span id="left">
-			<div id="board" class="board">
-				<div id="c0-0" class="cell">0</div>
-				<div id="c0-1" class="cell">1</div>
-				<div id="c0-2" class="cell">2</div>
-				<div id="c1-0" class="cell">3</div>
-				<div id="c1-1" class="cell">4</div>
-				<div id="c1-2" class="cell">5</div>
-				<div id="c2-0" class="cell">6</div>
-				<div id="c2-1" class="cell">7</div>
-				<div id="c2-2" class="cell">8</div>
-			</div>
-			<p id="message">&nbsp;</p>
-		</span>
-		<span style="width: 150px; text-align: right;">
+	<div class="content">
+		<div>
 			<button id="new" class="controls">New game</button>
-		</span>
+		</div>
+		<div class="board">
+			<div>
+				<span id="c0-0">0</span>
+				<span id="c0-1">1</span>
+				<span id="c0-2">2</span>
+			</div>
+			<div>
+				<span id="c1-0">3</span>
+				<span id="c1-1">4</span>
+				<span id="c1-2">5</span>
+			</div>
+			<div>
+				<span id="c2-0">6</span>
+				<span id="c2-1">7</span>
+				<span id="c2-2">8</span>
+			</div>
+		</div>
+		<p id="message">&nbsp;Hello!</p>
 	</div>
-	<div id="footer">
+	<div class="footer">
 		<p>© 2021 SEA9.ORG</p>
 	</div>
-	<script src="lesson-2.js" type="text/javascript"></script>
+	<script src="lesson-20.js" type="text/javascript"></script>
 </body>
 </html>
 ```
 
-3. `lesson-2.js`
+3. `lesson-20.js`
 ```javascript
-// Game Status
-// player: indicate which player's turn it is
-//  - player == -1 => 'X'
-//  - player == +1 => 'O'
-// cells: n x n grid with value: 0 (unoccupied), -1 (occupied by 'X'), +1 (occupied by 'O')
-// moves: total count
-// wins: statistic for all winning conditions (n + n + 2, that is each horizontal and vertical lines plus the 2 diagonals)
-//  - 0: forward diagonal, 1: backward diagonal, the rest are horizontals then vertical
-const game = {
-	player: 0,
-	cells: [[0]],
-	moves: 0,
-	wins: [0],
-}
-
-function evaluate(row, col) {
-	const n = game.cells.length;
-
-	game.moves ++;
-	if (row === col) {
-		game.wins[0] += game.player; // forward diagonal
-	}
-	if ((row + col + 1) === n) {
-		game.wins[1] += game.player; // backward diagonal
-	}
-	game.wins[col + 2] += game.player; // horizontal
-	game.wins[row + n + 2] += game.player; // vertical
-
-	if (game.wins.filter(w => w >= n).length > 0) {
-		game.player = 0;
-		return 1;
-	} else if (game.wins.filter(w => (-1 * w) >= n).length > 0) {
-		game.player = 0;
-		return -1;
-	} else if (game.moves >= n * n) {
-		game.player = 0;
-		return 255; // Draw
-	} else {
-		return 0;
-	}
-}
-
-// Draw the clicked cell with 'O' or 'X' according to the current turn
-function makeMove(row, col) {
-	if (game.cells[row][col] !== 0) {
-		return { moved: false, result: 0 }; // cell (row,col) already occupied
-	}
-
-	const eid = `c${row}-${col}`;
-	if (game.player > 0) {
-		document.getElementById(eid).textContent = 'O';
-		game.cells[row][col] = 1;
-	} else {
-		document.getElementById(eid).textContent = 'X';
-		game.cells[row][col] = -1;
-	}
-
-	switch (evaluate(row, col)) {
-		case -1:
-			document.getElementById('message').textContent = ' "X" won';
-			return { moved: true, result: -1 };
-		case 1:
-			document.getElementById('message').textContent = ' "O" won';
-			return { moved: true, result: 1 };
-		case 255:
-			document.getElementById('message').textContent = ' Draw';
-			return { moved: true, result: 255 };
-		default:
-			return { moved: true, result: 0 };
-	};
-}
-
-// Event handler for clicking a cell
+// Event handler: 處理滑鼠點擊方格事件
 function clicked(row, col) {
-	if (game.player !== 0) { // game.player === 0 if game is not yet started or already finished
-		const { moved, result } = makeMove(row, col);
-		if (moved) {
-			if (result === 0) { // game not yet concluded
-				console.log('row', row, 'column', col, 'clicked');
-				game.player = (game.player === -1) ? 1 : -1; // Next player
-			}
-		} else {
-			console.log(`[${row}, ${col}] already occupied`); // TODO TEMP
-		}
-	} else {
-		console.log('No game in progress');
-	}
+	console.log(row, col, 'clicked');
 }
 
+// Event handler: 處理滑鼠點擊'New game' button事件
 function newgame() {
 	console.log('New game!!!');
-	const n = 3
 
-	// Update html
-	document.getElementById('boardcss').innerHTML = `#board {grid-template-columns: repeat(${n}, 100px);}\n#left {width: ${110*n+10}px;}`; // dynamic part of the CSS
-
-	// Initialize the Game Status object
-	game.player = -1; // "X" start first
-	game.moves = 0;
-	game.wins = new Array(2 * n + 2);
-	for (let i = 0; i < game.wins.length; i ++) {
-		game.wins[i] = 0;
-	}
-	game.cells = new Array(n); // initial the rows
-
-	// Build the game board
-	const board = document.getElementById('board');
-
-	let r = -1;
-	let c;
-	for (let i = 0; i < n * n; i ++) {
-		if ((i % n) === 0) { // Note the modular operation i % n
-			r ++;
-			c = 0;
-			game.cells[r] = new Array(n); // initial columns of row 'r'
-		}
-
-		// Initialize the cell's corresponding value in the Game Status object
-		game.cells[r][c] = 0; // Delay the cell initialization to here
-		const row = r;
-		const col = c;
-		const eid = `c${row}-${col}`;
-
-		// Add event handlers to the new cell
-		let cell = document.getElementById(eid);
-		cell.textContent = '';
-		cell.onclick = () => clicked(row, col);
-
-		console.log('Initialized row', r, 'column', c);
-
-		c ++;
-	}
+	document.getElementById('c0-0').onclick = () => clicked(0, 0); // 設定 event handler
+	document.getElementById('c0-1').onclick = () => clicked(0, 1); // 設定 event handler
+	document.getElementById('c0-2').onclick = () => clicked(0, 2); // 設定 event handler
+	document.getElementById('c1-0').onclick = () => clicked(1, 0); // 設定 event handler
+	document.getElementById('c1-1').onclick = () => clicked(1, 1); // 設定 event handler
+	document.getElementById('c1-2').onclick = () => clicked(1, 2); // 設定 event handler
+	document.getElementById('c2-0').onclick = () => clicked(2, 0); // 設定 event handler
+	document.getElementById('c2-1').onclick = () => clicked(2, 1); // 設定 event handler
+	document.getElementById('c2-2').onclick = () => clicked(2, 2); // 設定 event handler
 }
 
 function init() {
-	document.getElementById('new').onclick = () => newgame(); // Add event handler for the 'New game' button
+	document.getElementById('new').onclick = () => newgame(); // 設定 event handler
 	newgame();
 }
 
@@ -343,3 +188,10 @@ window.onload = () => init();
 
 - 於瀏覽器在點選狀態下按鍵盤上的 F12，打開「開發者工具」，
 - 打開 Console 分頁下可以見到當前 JavaScript 程式的執行結果。
+
+#### >>> `lesson-2.html` 的執行結果是什麼？用滑鼠點擊其中一個方格會有什麼發生？
+> _你的答案..._
+
+---
+
+← 上一課 | [下一課 →](lesson-21.md)
