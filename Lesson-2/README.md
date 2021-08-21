@@ -122,7 +122,7 @@ a:active, a:link, a:visited {
 </head>
 <body>
 	<div class="header">
-		<div id="title">Lesson 2 - Tic Tac Toe</div>
+		<div id="title">Lesson 2 - 3x3 Tic Tac Toe</div>
 	</div>
 	<div class="content">
 		<div>
