@@ -91,6 +91,7 @@ window.onload = () => init();
 
 - `lesson-2.html`
 ```html
+<!-- 更新版本 -->
 <html lang="en">
 <head>
 <title>Lesson 2</title>
