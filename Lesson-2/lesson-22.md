@@ -147,7 +147,54 @@ function evaluate() {
 - **緊記修改 `lesson-2.html` 中 `<script>` 的 `src` 連結！！！**
 
 #### >>> 嘗試把 `lesson-22.js` 中的 function `evaluate()` 完成。
-> _你的答案..._
+> _答案..._
+> - `lesson-22.js`
+> ```javascript
+> // 答案版本
+> // 偵測遊戲結果，返回：0 - 遊戲繼續; -1 - 'X'勝; 1 - 'O'勝; 255 - 打和
+> function evaluate() {
+> 	let val1, val2;
+> 	let empty = 0;
+> 
+> 	// 橫直
+> 	for (let i = 0; i < 3; i ++) {
+> 		val1 = 0; // 橫
+> 		val2 = 0; // 直
+> 		for (let j = 0; j < 3; j ++) {
+> 			val1 += cells[i][j];
+> 			val2 += cells[j][i];
+> 			if (cells[i][j] === 0) {
+> 				empty ++;
+> 			}
+> 		}
+> 		if ((val1 === -3) || (val2 === -3)) {
+> 			return -1;
+> 		} else if ((val1 === 3) || (val2 === 3)) {
+> 			return 1;
+> 		}
+> 	}
+> 
+> 	val1 = 0;
+> 	val2 = 0;
+> 	// 斜
+> 	for (let i = 0; i < 3; i ++) {
+> 		val1 += cells[i][i];
+> 		val2 += cells[2 - i][i];
+> 	}
+> 	if ((val1 === -3) || (val2 === -3)) {
+> 		return -1;
+> 	} else if ((val1 === 3) || (val2 === 3)) {
+> 		return 1;
+> 	}
+> 
+> 	// 為什麼最後才檢查打和？
+> 	if (empty <= 0) {
+> 		return 255;
+> 	}
+> 
+> 	return 0;
+> }
+> ```
 
 ---
 
